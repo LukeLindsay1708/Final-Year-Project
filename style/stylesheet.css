@@ -1,21 +1,30 @@
 
 
 body{
-background-image: url();
+    background-image: url(.../../images/background_img.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
+
+
 header{
+position: fixed;
+top: 0;
+left: 0;
 padding: 10px;
-background-color: rgb(236, 236, 236);
-color: rgb(49, 122, 49);
+background-color: rgb(249, 249, 249);
+color: black;
 font-size: 15px;
 text-align: left;
 column-fill: auto;
 margin: 0;
+width: 100%;
+padding-top: 20px;
 }
 
 .get-started{
-    position: absolute;
+    position: fixed;
     right: 20px;
     bottom: 10px;
     padding: 10px 20px;
@@ -28,7 +37,7 @@ margin: 0;
     transition: 0.3s ease-in-out;
 }
 .sign-in{
-    position: absolute;
+    position: fixed;
     right: 15px;
     top: 50px;
     padding: 10px 20px;
@@ -40,6 +49,11 @@ margin: 0;
     border-radius: 3px;
     transition: 0.3s ease-in-out;
 }
+.get-started:hover, .sign-in:hover{
+    background-color: rgb(62, 62, 62);
+    color: white;
+    transform: scale(1.05);
+}
 .options{
     display: flex;
     justify-content: center;
@@ -48,7 +62,8 @@ margin: 0;
     width: 100vw;
     flex-wrap: nowrap;
     flex-direction: row;
-    margin-top: 30px;
+    margin-top: 150px;
+
 }
 .box{
  background-color: white;
@@ -73,6 +88,13 @@ margin: 0;
     text-decoration: none;
     color: black;
 }
+
+.box p{
+    font-size: 16x;
+    font-weight: normal;
+    color: black;
+}
+
 footer{
     margin-top: 50px;
     padding: 20px;
