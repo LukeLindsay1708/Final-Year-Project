@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar Planner</title>
+    <link rel="stylesheet" href="style/calendar_style.css">
+</head>
+<body>
+    <h1></h1>
+    
+    <!-- Home Icon -->
+    <div class="home-icon">
+        <a href="Home_Page.html">
+            <img src="style/images/paper house.png" alt="Home" width="100">
+        </a>
+    </div>
+
+    <div class="calendar-container">
+        <div class="calendar-header">
+            <button id="prev">Previous</button>
+            <h2 id="calendar-header">Month Year</h2>
+            <button id="next">Next</button>
+        </div>
+        <table id="calendar_table">
+            <thead>
+                <tr>
+                    <th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th>
+                    <th>Fri</th><th>Sat</th><th>Sun</th>
+                </tr>
+            </thead>
+            <tbody id="calendar_body"></tbody>
+        </table>
+    </div>
+
+    <!-- Popup for Hour Breakdown -->
+    <div id="hour-popup" class="popup">
+        <div class="popup-content">
+            <span id="close-popup">&times;</span>
+            <h2><span id="popup-date"></span></h2> 
+            <div id="hour-list"></div> 
+        </div>
+    </div>
+
+    <script src="calendar.js"></script>
+</body>
+</html>
